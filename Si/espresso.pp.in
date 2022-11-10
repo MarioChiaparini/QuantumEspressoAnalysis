@@ -1,0 +1,24 @@
+#&INPUTPP
+#outdir='silicon_charge',
+#prefix='si',
+#plot_num=0,
+#/
+
+#&PLOT
+#iflag=3,
+#output_format=6,
+#fileout='si_rho.cube',
+#nx=64,ny=64,nz=64,
+#/
+
+&INPUTPP
+   filplot = '/home/ABTLUS/mario.neto/.burai/Si/silicon_charge'
+   plot_num = 0
+/
+
+&PLOT
+   filepp(1) = '/home/ABTLUS/mario.neto/.burai/Si/silicon_charge'
+   iflag = 3
+   output_format = 5
+   fileout = '/home/ABTLUS/mario.neto/.burai/Si/CH4.rho.xsf'
+/

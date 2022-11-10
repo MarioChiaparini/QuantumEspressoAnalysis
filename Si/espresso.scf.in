@@ -1,0 +1,43 @@
+&CONTROL
+    calculation = "scf"
+    max_seconds =  8.64000e+04
+    pseudo_dir  = "/home/ABTLUS/mario.neto/.burai/.pseudopot"
+/
+
+&SYSTEM
+    a           =  5.46873e+00
+    degauss     =  1.00000e-02
+    ecutrho     =  1.00000e+02
+    ecutwfc     =  2.50000e+01
+    ibrav       = 1
+    nat         = 8
+    ntyp        = 1
+    occupations = "smearing"
+    smearing    = "gaussian"
+/
+
+&ELECTRONS
+    conv_thr         =  1.00000e-06
+    electron_maxstep = 200
+    mixing_beta      =  7.00000e-01
+    startingpot      = "atomic"
+    startingwfc      = "atomic+random"
+/
+
+K_POINTS {automatic}
+ 2  2  2  0 0 0
+
+ATOMIC_SPECIES
+Si     28.08550  Si.pbe-n-kjpaw_psl.1.0.0.UPF
+
+ATOMIC_POSITIONS {crystal}
+Si      0.000000   0.000000   0.000000
+Si      0.750000   0.750000   0.250000
+Si      0.000000   0.500000   0.500000
+Si      0.750000   0.250000   0.750000
+Si      0.500000   0.000000   0.500000
+Si      0.250000   0.750000   0.750000
+Si      0.500000   0.500000   0.000000
+Si      0.250000   0.250000   0.250000
+
+
