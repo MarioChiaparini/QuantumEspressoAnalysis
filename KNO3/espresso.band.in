@@ -1,0 +1,71 @@
+&CONTROL
+    calculation = "bands"
+    max_seconds =  8.64000e+04
+    pseudo_dir  = "/home/ABTLUS/mario.neto/.burai/.pseudopot"
+/
+
+&SYSTEM
+    a           =  5.54206e+00
+    c           =  9.21342e+00
+    degauss     =  1.00000e-02
+    ecutrho     =  1.00000e+02
+    ecutwfc     =  2.50000e+01
+    ibrav       = 4
+    nat         = 15
+    nbnd        = 60
+    ntyp        = 3
+    occupations = "smearing"
+    smearing    = "gaussian"
+/
+
+&ELECTRONS
+    conv_thr         =  1.00000e-06
+    electron_maxstep = 200
+    mixing_beta      =  7.00000e-01
+    startingpot      = "atomic"
+    startingwfc      = "atomic+random"
+/
+
+&BANDS
+    lsym           = .TRUE.
+    spin_component = 1
+/
+
+K_POINTS {tpiba_b}
+12
+gG     20
+M      20
+K      20
+gG     20
+A      20
+L      20
+H      20
+A      0
+L      20
+M      0
+K      20
+H      0
+
+ATOMIC_SPECIES
+K      39.09830  K.pbe-spn-kjpaw_psl.1.0.0.UPF
+N      14.00674  N.pbe-n-kjpaw_psl.1.0.0.UPF
+O      15.99940  O.pbe-n-kjpaw_psl.1.0.0.UPF
+
+ATOMIC_POSITIONS {angstrom}
+K       0.000000   0.000000   9.163829
+K       2.771033   1.599853   3.021549
+K      -0.000003   3.199712   6.092685
+N       0.000000   0.000000   4.016064
+N       2.771033   1.599853   7.087208
+N      -0.000003   3.199712   0.944928
+O       3.870473   0.965092   7.074337
+O       2.771033   2.869377   7.074337
+O       1.671594   0.965092   7.074337
+O       1.099437   2.564950   0.932057
+O       0.000000   4.469230   0.932057
+O      -1.099437   2.564950   0.932057
+O      -1.671591   4.164804   4.003192
+O       0.000000   1.269523   4.003192
+O       1.671591   4.164804   4.003192
+
+
